@@ -45,6 +45,10 @@ List<Integer> list = new ArrayList<>(Arrays.asList(array));
 // list to array
 List<Integer> list = Arrays.asList(1, 2, 3);
 Integer[] array = list.toArray(new Integer[0]);
+
+// List<int[]> to array
+List<int[]> list = new LinkedList<>();
+int[][] array = list.toArray(new int[0][]);
 ```
 
 
