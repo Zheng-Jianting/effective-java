@@ -53,8 +53,17 @@ int[][] array = list.toArray(new int[0][]);
 
 
 
+### Arrays.copyOfRange
 
+```java
+// Arrays.copyOfRange(T[] original, int from, int to);
+// return a new array: original[from, to)
 
+int[] array = { 0, 1, 0, 5, 2, 6 };
+// 从 index = 1 开始复制 k 个数
+// to = ? : 因为复制 k 个数, 所以 to - from = k, to = from + k
+int[] subArray = Arrays.copyOfRange(array, 1, 1 + k);
+```
 
 
 
